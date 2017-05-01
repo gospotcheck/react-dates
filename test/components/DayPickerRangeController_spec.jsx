@@ -1038,7 +1038,7 @@ describe('DayPickerRangeController', () => {
 
       const modifiers = wrapper.find(DayPicker).prop('modifiers');
       expect(modifiers).to.include.keys('hovered');
-      expect(modifiers).to.include.keys('hovered-span');
+      expect(modifiers).to.include.keys('hovered-area');
       expect(modifiers).to.include.keys('after-hovered-start');
     });
 
@@ -1049,7 +1049,7 @@ describe('DayPickerRangeController', () => {
 
       const modifiers = wrapper.find(DayPicker).prop('modifiers');
       expect(modifiers).to.not.include.keys('hovered');
-      expect(modifiers).to.not.include.keys('hovered-span');
+      expect(modifiers).to.not.include.keys('hovered-area');
       expect(modifiers).to.not.include.keys('after-hovered-start');
     });
 
@@ -1092,7 +1092,7 @@ describe('DayPickerRangeController', () => {
       );
 
       const modifiers = wrapper.find(DayPicker).prop('modifiers');
-      expect(modifiers).to.include.keys('selected-span');
+      expect(modifiers).to.include.keys('selected-area');
       expect(modifiers).to.include.keys('last-in-range');
     });
 
@@ -1100,7 +1100,7 @@ describe('DayPickerRangeController', () => {
       const wrapper = shallow(<DayPickerRangeController />);
 
       const modifiers = wrapper.find(DayPicker).prop('modifiers');
-      expect(modifiers).to.not.include.keys('selected-span');
+      expect(modifiers).to.not.include.keys('selected-area');
       expect(modifiers).to.not.include.keys('last-in-range');
     });
   });

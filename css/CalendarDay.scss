@@ -67,7 +67,7 @@
   }
 }
 
-.CalendarDay--selected-span {
+.CalendarDay--selected-area {
   background: $react-dates-color-primary-shade-2;
   border: 1px double $react-dates-color-primary-shade-1;
   color: $react-dates-color-white;
@@ -83,7 +83,7 @@
   }
 }
 
-.CalendarDay--hovered-span,
+.CalendarDay--hovered-area,
 .CalendarDay--after-hovered-start {
   background: $react-dates-color-primary-shade-4;
   border: 1px double $react-dates-color-primary-shade-3;

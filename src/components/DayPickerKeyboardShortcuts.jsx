@@ -128,7 +128,7 @@ export default function DayPickerKeyboardShortcuts({
           e.currentTarget.blur();
         }}
       >
-        <span className="DayPickerKeyboardShortcuts__show_span">?</span>
+        <span className="DayPickerKeyboardShortcuts__show_area">?</span>
       </button>
 
       {showKeyboardShortcutsPanel &&

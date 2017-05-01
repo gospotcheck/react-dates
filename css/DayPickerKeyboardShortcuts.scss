@@ -30,7 +30,7 @@
     border-right: 33px solid #008489;
   }
 
-  .DayPickerKeyboardShortcuts__show_span {
+  .DayPickerKeyboardShortcuts__show_area {
     bottom: 0;
     right: -28px;
   }
@@ -46,7 +46,7 @@
     border-right: 33px solid #008489;
   }
 
-  .DayPickerKeyboardShortcuts__show_span {
+  .DayPickerKeyboardShortcuts__show_area {
     top: 1px;
     right: -28px;
   }
@@ -62,13 +62,13 @@
     border-left: 33px solid #008489;
   }
 
-  .DayPickerKeyboardShortcuts__show_span {
+  .DayPickerKeyboardShortcuts__show_area {
     top: 1px;
     left: -28px;
   }
 }
 
-.DayPickerKeyboardShortcuts__show_span {
+.DayPickerKeyboardShortcuts__show_area {
   color: $react-dates-color-white;
   position: absolute;
 }

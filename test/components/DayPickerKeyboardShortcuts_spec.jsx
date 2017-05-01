@@ -122,10 +122,10 @@ describe('DayPickerKeyboardShortcuts', () => {
         expect(wrapper.find('.DayPickerKeyboardShortcuts__show').is('button')).to.equal(true);
       });
 
-      it('contains .DayPickerKeyboardShortcuts__show_span', () => {
+      it('contains .DayPickerKeyboardShortcuts__show_area', () => {
         const wrapper = shallow(<DayPickerKeyboardShortcuts />);
         const buttonWrapper = wrapper.find('.DayPickerKeyboardShortcuts__show');
-        expect(buttonWrapper.find('.DayPickerKeyboardShortcuts__show_span')).to.have.lengthOf(1);
+        expect(buttonWrapper.find('.DayPickerKeyboardShortcuts__show_area')).to.have.lengthOf(1);
       });
 
       it('click calls props.openKeyboardShortcutsPanel', () => {

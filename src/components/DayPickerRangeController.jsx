@@ -348,7 +348,7 @@ export default class DayPickerRangeController extends React.Component {
         'blocked-minimum-nights': day => this.doesNotMeetMinimumNights(day),
       },
       ...(startDate && endDate) && {
-        'selected-span': day => this.isInSelectedSpan(day),
+        'selected-area': day => this.isInSelectedSpan(day),
         'last-in-range': day => this.isLastInRange(day),
       },
       ...!this.isTouchDevice && {
@@ -356,7 +356,7 @@ export default class DayPickerRangeController extends React.Component {
         hovered: day => this.isHovered(day),
 
         // while start date has been set, but end date has not been
-        'hovered-span': day => this.isInHoveredSpan(day),
+        'hovered-area': day => this.isInHoveredSpan(day),
         'after-hovered-start': day => this.isDayAfterHoveredStartDate(day),
       },
     };
