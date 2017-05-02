@@ -102,3 +102,86 @@
 .transition-container--vertical {
   width: 100%;
 }
+
+// GSC-Specific Styles
+.DayPicker table {
+  tr td {
+    border: none !important;
+
+    > .CalendarDay__button {
+      box-sizing: border-box;
+      border: 1px solid transparent; // #e9e9e9;
+    }
+
+    &.CalendarDay--hovered-area > .CalendarDay__button {
+      border-color: $react-dates-color-primary-shade-4;
+    }
+
+    &.CalendarDay--selected-area {
+      background: $react-dates-color-primary-shade-4;
+
+      > .CalendarDay__button {
+        border-color: $react-dates-color-primary-shade-4;
+      }
+    }
+
+    &.CalendarDay--selected-start, &.CalendarDay--selected-end, &.CalendarDay--selected {
+      > .CalendarDay__button {
+        border-color: $react-dates-color-primary;
+      }
+    }
+  }
+
+  tr:hover td {
+    background: none;
+    -webkit-transition: none;
+    transition: none;
+
+    &.CalendarDay--hovered-area {
+      background: $react-dates-color-primary-shade-4;
+    }
+
+    &.CalendarDay--selected-area {
+      background: $react-dates-color-primary-shade-4;
+    }
+
+    &.CalendarDay--selected-start, &.CalendarDay--selected-end, &.CalendarDay--selected {
+      background: $react-dates-color-primary;
+    }
+
+    &:hover {
+      background: whitesmoke;
+
+      &.CalendarDay--hovered-area {
+        background: $react-dates-color-primary;
+
+        > .CalendarDay__button {
+          border-color: $react-dates-color-primary;
+          color: $react-dates-color-white;
+        }
+      }
+
+      &.CalendarDay--selected-area {
+        background: $react-dates-color-primary-shade-3;
+
+        > .CalendarDay__button {
+          border-color: $react-dates-color-primary-shade-2;
+        }
+      }
+
+      &.CalendarDay--selected-start, &.CalendarDay--selected-end, &.CalendarDay--selected {
+        background: $react-dates-color-primary;
+
+        > .CalendarDay__button {
+          border-color: $react-dates-color-primary-shade-0;
+        }
+      }
+    }
+
+    &:active {
+      &.CalendarDay--hovered-area > .CalendarDay__button {
+        background: $react-dates-color-primary-shade-0;
+      }
+    }
+  }
+}
