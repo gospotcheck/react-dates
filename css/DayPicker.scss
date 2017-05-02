@@ -126,6 +126,8 @@
     }
 
     &.CalendarDay--selected-start, &.CalendarDay--selected-end, &.CalendarDay--selected {
+      background: $react-dates-color-primary;
+
       > .CalendarDay__button {
         border-color: $react-dates-color-primary;
       }
