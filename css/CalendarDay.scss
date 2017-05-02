@@ -70,7 +70,7 @@
 .CalendarDay--selected-area {
   background: $react-dates-color-primary-shade-2;
   border: 1px double $react-dates-color-primary-shade-1;
-  color: $react-dates-color-white;
+  color: $react-dates-color-text;
 
   &.CalendarDay--hovered,
   &:active {
