@@ -1,5 +1,8 @@
 # Change Log
 
+## v11.0.0
+- [new] Implement GSC styling
+
 ## v10.1.2
 - [fix] Remove unused scss variables ([#475](https://github.com/airbnb/react-dates/pull/475))
 - [fix] Address some issues introduced by the accessibility PR in v10.0.0 ([#477](https://github.com/airbnb/react-dates/pull/477))
