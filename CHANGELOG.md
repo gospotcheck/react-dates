@@ -1,5 +1,8 @@
 # Change Log
 
+## v11.0.1
+- [new] Nothing, really.
+
 ## v11.0.0
 - [new] Implement GSC styling
 
