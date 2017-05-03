@@ -1,7 +1,7 @@
 {
   "name": "@gospotcheck/gospotcheck-react-dates",
   "private": true,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A responsive and accessible date range picker component built with React",
   "main": "index.js",
   "scripts": {
