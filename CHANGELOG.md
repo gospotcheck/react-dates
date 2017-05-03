@@ -1,5 +1,8 @@
 # Change Log
 
+## v0.0.2
+- [new] Still nothing.
+
 ## v11.0.1
 - [new] Nothing, really.
 
